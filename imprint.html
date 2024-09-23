@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginnerspc - Repair & Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo" id="bright">
+            <a href="index.html" ><span>Beginner</span>Pcs</a>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li><a href="index.html" target="#">Home</a></li>
+                <li><a href="#" target="#">About</a></li>
+                <li><a href="#servicemain" target="#">Services</a></li>
+                <li><a href="contact.html" target="#">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <img src="assets/hamburger.svg" alt="Menu" class="hamburger-icon">
+                <img src="assets/cross.svg" alt="Close" class="cross-icon">
+            </div>
+        </nav>
+    </header>
+    <section class="imprint">
+        <div class="imprint-content">
+            <h1>Imprint</h1>
+        </div>
+    </section>
+    <section class="imprint-main">
+        <!-- Section for contact address -->
+        <div class="contact-address">
+            <h1><strong>Kontakt-Adresse</strong></h1>
+            <p>
+                BeginnersPC Durakovic<br />
+                S&uuml;dstrasse 15<br />
+                4665 Oftringen<br />
+                Schweiz
+            </p>
+            <p>
+                E-Mail: <a href="mailto:info@beginnerspc.ch">info@beginnerspc.ch</a>
+            </p>
+        </div>
+    
+        <!-- Liability disclaimer section -->
+        <div class="disclaimer">
+            <h1><strong>Haftungsausschluss</strong></h1>
+            <p>
+                Der Autor &uuml;bernimmt keinerlei Gew&auml;hr hinsichtlich der
+                inhaltlichen Richtigkeit, Genauigkeit, Aktualit&auml;t, Zuverl&auml;ssigkeit und Vollst&auml;ndigkeit der
+                Informationen.
+            </p>
+            <p>
+                Haftungsanspr&uuml;che gegen den Autor wegen Sch&auml;den materieller oder immaterieller Art, welche aus dem
+                Zugriff oder der Nutzung bzw. Nichtnutzung der ver&ouml;ffentlichten Informationen, durch Missbrauch der
+                Verbindung oder durch technische St&ouml;rungen entstanden sind, werden ausgeschlossen.
+            </p>
+            <p>
+                Alle Angebote sind unverbindlich. Der Autor beh&auml;lt es sich ausdr&uuml;cklich vor, Teile der Seiten oder
+                das gesamte Angebot ohne besondere Ank&uuml;ndigung zu ver&auml;ndern, zu erg&auml;nzen, zu l&ouml;schen
+                oder die Ver&ouml;ffentlichung zeitweise oder endg&uuml;ltig einzustellen.
+            </p>
+        </div>
+    
+        <!-- Disclaimer for links -->
+        <div class="links-disclaimer">
+            <h1><strong>Haftungsausschluss f&uuml;r Links</strong></h1>
+            <p>
+                Verweise und Links auf Webseiten Dritter liegen ausserhalb unseres Verantwortungsbereichs. Es wird jegliche
+                Verantwortung f&uuml;r solche Webseiten abgelehnt. Der Zugriff und die Nutzung solcher Webseiten erfolgen
+                auf eigene Gefahr des jeweiligen Nutzers.
+            </p>
+        </div>
+    
+        <!-- Copyright information -->
+        <div class="copyright">
+            <h1><strong>Urheberrechte</strong></h1>
+            <p>
+                Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf dieser Website,
+                geh&ouml;ren ausschliesslich <strong>Amel Durakovic</strong> oder den speziell genannten Rechteinhabern.
+                F&uuml;r die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung des Urheberrechtstr&auml;gers
+                im Voraus einzuholen.
+            </p>
+            <p>
+                Quelle: <a href="https://www.swissanwalt.ch" target="_blank" rel="noopener">SwissAnwalt</a>
+            </p>
+        </div>
+    </section>
+    
+    <footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <a href="#"><span>Beginner</span>Pcs</a>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="imprint.html">Imprint</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-subscribe">
+            <h4>Subscribe to Our Newsletter</h4>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact Info</h4>
+            <p>1234 Street Name, City, Country</p>
+            <p>info@comtech.com</p>
+            <p>+1 123 456 7890</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 Beginnerspc. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active'); 
+        navMenu.classList.toggle('active'); 
+    });
+</script>
+</html>
